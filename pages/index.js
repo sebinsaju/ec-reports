@@ -27,7 +27,8 @@ export default function Home() {
         <script
           src="https://kit.fontawesome.com/13bd9064b7.js"
           crossorigin="anonymous"
-        ></script>
+          async
+        />
       </Head>
       <div className={styles.banner}>
         <Header logoWhite />

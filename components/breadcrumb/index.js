@@ -9,7 +9,7 @@ const BreadCrumb = ({ breadcrumb }) => {
         {breadcrumb &&
           breadcrumb.map((item, index) => {
             return(
-                <li><Link href={item.slug}><a>{item.title}</a></Link></li>
+                <li key={index}><Link href={item.slug}><a>{item.title}</a></Link></li>
             )
           })}
       </ul>

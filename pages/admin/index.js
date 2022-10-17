@@ -69,7 +69,7 @@ const Admin = () => {
               {data &&
                 data.map((item, index) => {
                   return (
-                    <tr>
+                    <tr key={index}>
                       <td scope="row">{index + 1}</td>
                       <td>{item.name}</td>
                       <td>{item.email}</td>
