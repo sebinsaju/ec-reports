@@ -1,0 +1,14 @@
+import React from 'react'
+import style from "./Loading.module.scss";
+
+const Loading = () => {
+  return (
+    <div className={style.loading_wrapper}>
+        <div className={style.loader}>
+        </div>
+        Loading ...
+    </div>
+  )
+}
+
+export default Loading

@@ -1,0 +1,53 @@
+@import "../../styles/var";
+.create_form {
+  .title {
+    margin-bottom: 20px;
+  }
+  .section_form {
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: map-get($colors, "bg-secondary");
+    padding: 20px 10px;
+  }
+  .section_question {
+    background-color: map-get($colors, "bg-secondary");
+    padding: 20px 10px;
+    border-radius: 4px;
+  }
+  input,select {
+    margin-bottom: 10px;
+  }
+  .btn_wrapper {
+    display: flex;
+    justify-content: right;
+    margin-top: 20px;
+  }
+  .btn_add{
+    // display: flex;
+    // justify-content: right;
+    margin: 10px 0;
+  }
+  .questions{
+    padding-bottom: 20px;
+  }
+  h6{
+    margin: 0;
+  }
+  .error{
+    color: red;
+  }
+  select{
+    border: 1px solid map-get($colors , "border" );
+    padding: 5px 8px;
+    border-radius: 4px;
+    background-color: transparent;
+    outline: none;
+    opacity: 0.7;
+    &:active,&:focus{
+      border: 1px solid map-get($colors , "outline" );
+    }
+  }
+  .option_input{
+    display: flex;
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../styles/var";
+.sidebar{
+    max-width: 350px;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    color: white;
+    background-color: map-get($colors , "primary" );
+    padding: 0 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    .logo{
+        font-weight: 700;
+        font-size: 24px;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+    }
+    .menu_wrapper{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        padding-top: 10px;
+        li{
+            a{
+                padding: 10px ;
+                text-decoration: none;
+                color: inherit;
+                font-size: 18px;
+                font-weight: 500;
+                display: block;
+                cursor: pointer;
+            }
+            &.active{
+                a{
+                    background-color: #fff;
+                    border-radius: 4px;
+                    color: #111;
+                    transition: all ease 0.5s;
+                }
+            }
+        }
+    }
+}

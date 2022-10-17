@@ -1,0 +1,31 @@
+@import "../../styles/var";
+.button {
+  button,
+  a {
+    padding: 5px 10px;
+    font-weight: 500;
+    min-width: 70px;
+    border: none;
+  }
+  &.primary {
+    button,
+    a {
+      background-color: map-get($colors , "primary" );
+      border: none;
+      border-radius: 4px;
+      color: #fff;
+      padding: 7px 15px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+  &.fullwidth{
+    button{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@import "../../styles/var";
+.listing{
+    background-color: map-get($colors, "bg-secondary" );
+    padding: 0 10px;
+    border-radius: 4px;
+}
