@@ -31,7 +31,6 @@ const AddNewUser = ({init}) => {
         }
         setLoading(false)
       });
-    console.log(values)
   };
   return (
     <div className={style.add_user}>

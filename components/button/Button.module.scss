@@ -24,6 +24,9 @@
       }
     }
   }
+  &.disabled{
+    opacity: 0.6;
+  }
   &.fullwidth{
     button{
       width: 100%;

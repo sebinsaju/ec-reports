@@ -3,7 +3,7 @@ export const INITIAL ={
     title:"",
     description:"",
     question:"",
-    type:"single_choice",
+    type:"text",
     option:""
 }
 export const VALIDATION = Yup.object().shape({

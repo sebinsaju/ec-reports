@@ -14,6 +14,9 @@ export default function Home() {
       if (localStorage.getItem("Role") === "admin") {
         route.push("employee-admin");
       }
+      if(localStorage.getItem("Role")=== "user"){
+        route.push("user")
+      }
     } else {
       route.push("login");
     }

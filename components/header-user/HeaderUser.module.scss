@@ -1,0 +1,22 @@
+@import "../../styles/var";
+.header{
+    height: 60px;
+    background-color: map-get($colors , "primary" );
+    color:map-get($colors , "primary-color" ) ;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: space-between;
+    .menu_icon{
+        font-size: 24px;
+        line-height: 0;
+        cursor: pointer;
+    }
+    .logo{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    @media screen and (max-width:767px) {
+        padding: 10px;
+    }
+}

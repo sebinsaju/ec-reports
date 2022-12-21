@@ -1,0 +1,28 @@
+.user_layout {
+  position: relative;
+  .sidebar_wrapper {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0;
+    display: block;
+    transform: translateX(-100%);
+    transition: all ease 0.5s;
+    &.show {
+      transform: translateX(0px);
+      z-index: 9;
+      transition: all ease 0.5s;
+    }
+  }
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  .content {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+}

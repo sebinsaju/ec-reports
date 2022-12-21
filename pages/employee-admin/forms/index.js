@@ -13,7 +13,7 @@ const Forms = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "right",
+          justifyContent: "right", 
           marginBottom: "10px",
         }}
       >
@@ -25,7 +25,6 @@ const Forms = () => {
       </div>
       <Listing endpoint={ENDPOINT.adminForm}>
         {(data) => {
-          console.log(data)
           return(
             <Table>
               <thead>

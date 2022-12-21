@@ -12,6 +12,7 @@ import { toast } from "react-toastify";
 const CreateFormComponent = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [questions, setquestions] = useState([]);
   const [options, setOptions] = useState([]);
   const addQuestion = (values) => {
@@ -39,7 +40,6 @@ const CreateFormComponent = () => {
       .catch((err) => {
         console.log(err), setLoading(false);
       });
-    console.log(questions)
   };
   return (
     <div className={style.create_form}>
@@ -89,8 +89,8 @@ const CreateFormComponent = () => {
                       return (
                         <li className={style.question_wrapper} key={index}>
                           <h6>{item.question}</h6>
-                          <div>{FormatAnsType(item.type)}</div>
-                          {item.options?<ul>
+                          <div style={{opacity:"0.7"}}>Answer type : {FormatAnsType(item.type)}</div>
+                          {item.options?<ul style={{opacity:"0.7"}}>
                             {item.options.map((option,index)=>{
                               return<li key={index}>{option}</li>
                             })}
@@ -122,9 +122,9 @@ const CreateFormComponent = () => {
                 onBlur={handleBlur}
                 value={values.ans_type}
               >
+                <option value="text">Text</option>
                 <option value="single_choice">Single Choice</option>
                 <option value="multi_choice">Multi Choise</option>
-                <option value="text">Text</option>
                 <option value="image">Image</option>
               </select>
               {values.type === "multi_choice" ||

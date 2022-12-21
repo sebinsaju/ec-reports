@@ -25,16 +25,18 @@ const Login = () => {
     setLoading(true);
     axios
       .post(
-        "https://app-form-project.herokuapp.com/api/v1/common/login",
+        "http://13.233.118.5:3200/api/v1/common/login",
         values
       )
       .then((res) => {
-        console.log(res);
         if (res.data.token && res.data.role) {
           localStorage.setItem("Token", res.data.token);
           localStorage.setItem("Role", res.data.role);
           if (res.data.role === "admin") {
             route.push("employee-admin");
+          }
+          if(res.data.role === "user"){
+            route.push("user")
           }
         }
         setLoading(false);
