@@ -13,7 +13,7 @@ const SidebarUser = ({close}) => {
       <div className={style.sidebar_wrapper}>
         {data.map((item,index)=>{
           return(
-            <div className={`${style.menu_item} ${item.active?style.active:""}`}>{item.title}</div>
+            <div className={`${style.menu_item} ${item.active?style.active:""}`} key={index}>{item.title}</div>
           )
         })}
       </div>
