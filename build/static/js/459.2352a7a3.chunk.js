@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmodernize=self.webpackChunkmodernize||[]).push([[459],{8459:function(e,n,r){r.r(n);r(7313);var i=r(6417);n.default=function(){return(0,i.jsx)("div",{children:(0,i.jsx)("h2",{children:"Submitted Forms"})})}}}]);
